@@ -25,16 +25,15 @@ class ViewController: UIViewController {
         print(test2.text!)
         
         
+        var addition : Bool = false
         
         
-        thelabel.text = "Addition is \(Double(Text1.text!)! + Double(test2.text!)!)"
-        
-        
-        
-        
-        
-        
-        
+        if addition {
+            thelabel.text = "Addition is \(Double(Text1.text!)! + Double(test2.text!)!)"
+        } else {
+            thelabel.text = "Subtraction is \(Double(Text1.text!)! - Double(test2.text!)!)"
+        }
+    
         
     }
     
@@ -45,12 +44,12 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.lightGray
         thelabel.text = "Hello from swift"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
