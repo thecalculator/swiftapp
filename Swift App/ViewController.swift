@@ -10,21 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var counter = 0;
+    
     @IBOutlet weak var thelabel: UILabel!
+    
+    
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var test2: UITextField!
+    
     @IBAction func Clickmebutton(_ sender: Any) {
-        thelabel.text = "button pushed"
-        print("button pushed")
-        counter += 1
-        print(counter)
-        if counter >= 10 {
-            thelabel.text = "Pushed 10 times"
-        }
+        
+        
+        print(Text1.text!)
+        print(test2.text!)
+        
+        
+        
+        
+        thelabel.text = "Addition is \(Double(Text1.text!)! + Double(test2.text!)!)"
+        
+        
+        
+        
+        
+        
+        
         
     }
-    @IBAction func buttonexe(_ sender: Any) {
-        thelabel.text = "button is cool"
-    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
